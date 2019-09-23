@@ -32,8 +32,8 @@ def my_hash = ["eggs", "milk"]
       end
     end
 
-    describe "my_hash_creator" do
-      it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
+    def my_hash_creator = [:name]
+      #=> parameter has key 
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
         expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
 
