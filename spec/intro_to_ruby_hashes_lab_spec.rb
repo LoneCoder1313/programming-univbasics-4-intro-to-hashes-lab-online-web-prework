@@ -44,8 +44,8 @@ def my_hash = ["eggs", "milk"]
 end
 
 describe "reading data from a hash" do
-  describe "read_from_hash" do
-    it "returns the value corresponding to the provided key" do
+  def read_from_hash = nil 
+    #=> read_from_hash("produces a respond")
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
     end
