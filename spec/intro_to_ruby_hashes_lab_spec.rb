@@ -56,9 +56,8 @@ describe "reading data from a hash" do
   end
 end
 
-describe "updating data in a hash" do
-  describe "update_counting_hash" do
-    it "accepts a hash and key as parameters" do
+def counting_hash = [{}, "hello"]
+  #=>update_hash 
       expect{ update_counting_hash({},'hello') }.to_not raise_error
     end
 
