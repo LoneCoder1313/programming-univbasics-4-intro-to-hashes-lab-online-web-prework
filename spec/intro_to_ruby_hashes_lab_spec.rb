@@ -1,18 +1,17 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
 
-describe "working with hashes" do
-
-  describe "instantiating" do
-    describe "new_hash" do
-      it "creates an empty hash and returns it" do
+def  new_hash = ["10", "20", "30", "40"]
+  #=> []
         expect(new_hash).to eq({})
       end
     end
 
 
-    describe "my_hash" do
-      it "creates and returns a valid hash that contains key/value pairs of your choice" do
+def my_hash = ["eggs", "milk"]
+  #=> my_hash = {:
+  #=>"eggs"=> 2.15
+  #=>"milk"=> 3.00
         expect(my_hash).to be_a(Hash)
         expect(my_hash.keys.count).to_not eq(0)
       end
