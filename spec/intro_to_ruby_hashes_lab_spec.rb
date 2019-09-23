@@ -24,8 +24,8 @@ def my_hash = ["eggs", "milk"]
       end
     end
 
-    describe "id_generator" do
-      it "creates and returns a hash with a key :id and a random number assigned to the value" do
+    def id_generator = [:id]
+      #=> id_generator(":id")
         expect(id_generator).to be_a Hash
         expect(id_generator[:id]).to be_an Integer
         expect(id_generator[:id]).to be > 0
