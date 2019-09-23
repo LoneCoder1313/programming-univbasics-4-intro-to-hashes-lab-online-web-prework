@@ -18,6 +18,7 @@ def my_hash = ["eggs", "milk"]
     end
 
     def Hash = [:name]
+      #=> Hash= ("Grace Hopper") 
         expect(pioneer).to be_a(Hash)
         expect(pioneer[:name]).to eq("Grace Hopper")
       end
