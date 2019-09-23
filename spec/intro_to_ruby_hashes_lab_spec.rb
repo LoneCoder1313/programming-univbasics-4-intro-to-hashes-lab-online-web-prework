@@ -17,8 +17,7 @@ def my_hash = ["eggs", "milk"]
       end
     end
 
-    describe "pioneer" do
-      it "creates and returns a hash named pioneer whose key is a symbol :name and whose value is a string, 'Grace Hopper'" do
+    def Hash = [:name]
         expect(pioneer).to be_a(Hash)
         expect(pioneer[:name]).to eq("Grace Hopper")
       end
